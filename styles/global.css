@@ -32,6 +32,10 @@
   --text-sm: 400 14px/140% var(--font-text);
 }
 
+body {
+  background-color: var(--base-gray-500);
+}
+
 h1 {
   font: var(--title-lg);
   color: var(--base-gray-100);
@@ -55,6 +59,10 @@ h4 {
 p {
   font: var(--text-sm);
   color: var(--base-gray-300);
+}
+
+img {
+  max-width: 100%;
 }
 
 .container {

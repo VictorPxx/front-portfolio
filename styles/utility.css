@@ -1,0 +1,19 @@
+.flex {
+  display: flex;
+}
+
+.grip {
+  display: grid;
+}
+
+.gap-8 {
+  gap: 8px;
+}
+
+.gap-16 {
+  gap: 16px;
+}
+
+.gap-24 {
+  gap: 24px;
+}
