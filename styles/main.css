@@ -13,6 +13,10 @@ main {
 
 #cards {
   grid-area: cards;
+
+  a{
+    text-decoration: none;
+  }
   
   & > div {
     gap: 24px;
@@ -20,8 +24,9 @@ main {
     margin-bottom: 144px;
   }
   .card {
-    width: 330px;
-    height: 280px;
+    border: 1.5px solid var(--base-gray-400);
+    width: 328.5px;
+    height: 278.5px;
     border-radius: 12px;
     background-color: var(--base-gray-400);
     text-align: start;
@@ -33,7 +38,11 @@ main {
       border-radius: 8px;
     }
   }
-  
+
+  .card:hover {
+    border-radius: 12px;
+    border: 1.5px solid var(--base-gray-300);
+  }
 }
 
 #cards header {
