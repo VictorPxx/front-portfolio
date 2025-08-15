@@ -24,9 +24,8 @@ main {
     margin-bottom: 144px;
   }
   .card {
-    border: 1.5px solid var(--base-gray-400);
-    width: 328.5px;
-    height: 278.5px;
+    width: 330px;
+    height: 280px;
     border-radius: 12px;
     background-color: var(--base-gray-400);
     text-align: start;
@@ -41,7 +40,7 @@ main {
 
   .card:hover {
     border-radius: 12px;
-    border: 1.5px solid var(--base-gray-300);
+    outline: 1.5px solid var(--base-gray-300);
   }
 }
 
