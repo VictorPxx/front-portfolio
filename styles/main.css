@@ -1,0 +1,43 @@
+main {
+  text-align: center;
+  flex-direction: column;
+  margin-block: 72px 144px;
+  min-width: 1366px;
+
+  h4 {
+    color: var(--red-principal);
+    margin-bottom: 8px;
+  }
+
+}
+
+#cards {
+  grid-area: cards;
+  
+  & > div {
+    gap: 24px;
+    max-width: 1040px;
+    margin-bottom: 144px;
+  }
+  .card {
+    width: 330px;
+    height: 280px;
+    border-radius: 12px;
+    background-color: var(--base-gray-400);
+    text-align: start;
+    padding: 12px 12px 17px 12px;
+
+    img {
+      object-fit: contain;
+      overflow: hidden;
+      border-radius: 8px;
+    }
+  }
+  
+}
+
+#cards header {
+  margin-bottom: 56px;
+}
+
+

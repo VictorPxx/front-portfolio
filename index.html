@@ -1,82 +1,229 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<head>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Front Portfólio</title>
-  <link rel="stylesheet" href="styles/index.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Front Portfólio</title>
+    <link rel="stylesheet" href="styles/index.css" />
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,700;1,700&family=Inconsolata&family=Maven+Pro&display=swap"
-    rel="stylesheet">
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Inconsolata:wght@200..900&family=Maven+Pro:wght@400..900&display=swap" rel="stylesheet">
+  </head>
 
-<body>
-  <div id="intro">
-    <div id="info" class="flex container">
-      <header class="flex">
-        <div id="user-info">
-          <div id="tag-code">
-            <img src="assets/icons/Code.svg" alt="Ícone de código html">
+  <body>
+    <div id="intro">
+      <div id="info" class="container">
+        <header class="flex">
+          <div id="user-info">
+            <div id="tag-code">
+              <img src="assets/icons/Code.svg" alt="Ícone de código html" />
+            </div>
+            <div id="user-photo">
+              <img src="assets/Image.svg" alt="Imagem de Martina Santos" />
+            </div>
           </div>
-          <div id="user-photo">
-            <img src="assets/Image.svg" alt="Imagem de Martina Santos">
+
+          <div id="texts">
+            <h4>Hello World! Meu nome é <span>Martina Santos</span> e sou</h4>
+            <h1>Desenvolvedora Fullstack</h1>
+            <p>
+              Transformo necessidades em aplicações reais, evolventes e
+              funcionais. Desenvolvo sistemas através da minha paixão pela
+              tecnologia, contribuindo com soluções inovadoras e eficazes para
+              desafios complexos.
+            </p>
           </div>
+        </header>
+
+        <nav>
+          <div id="tags" class="flex gap-16">
+            <div>
+              <img src="assets/icons/GitHubHeader.svg" alt="Ícone do github" />
+              <span>GitHub</span>
+            </div>
+
+            <div>
+              <img src="assets/icons/HTML.svg" alt="Ícone do html" />
+              <span>HTML</span>
+            </div>
+
+            <div>
+              <img src="assets/icons/CSS.svg" alt="Ícone do css" />
+              <span>CSS</span>
+            </div>
+
+            <div>
+              <img
+                src="assets/icons/JavaScript.svg"
+                alt="Ícone do javascript"
+              />
+              <span>Javascript</span>
+            </div>
+
+            <div>
+              <img src="assets/icons/React.svg" alt="Ícone do react" />
+              <span>React</span>
+            </div>
+
+            <div>
+              <img src="assets/icons/Node.js.svg" alt="Ícone do node.js" />
+              <span>Node.js</span>
+            </div>
+          </div>
+        </nav>
+
+        <div id="ArrowDown">
+          <img
+            src="assets/icons/CaretDoubleDown.svg"
+            alt="Ícone de duas setas para baixo"
+          />
         </div>
-
-        <div id="texts">
-          <h4>Hello World! Meu nome é <span>Martina Santos</span> e sou</h4>
-          <h1>Desenvolvedora Fullstack</h1>
-          <p>
-            Transformo necessidades em aplicações reais, evolventes e funcionais. Desenvolvo sistemas através da minha
-            paixão pela tecnologia, contribuindo com soluções inovadoras e eficazes para desafios complexos.
-          </p>
-        </div>
-      </header>
-
-      <nav>
-        <div id="tags" class="flex gap-16">
-          <div>
-            <img src="assets/icons/GitHubHeader.svg" alt="Ícone do github">
-            <span>GitHub</span>
-          </div>
-
-          <div>
-            <img src="assets/icons/HTML.svg" alt="Ícone do html">
-            <span>HTML</span>
-          </div>
-
-          <div>
-            <img src="assets/icons/CSS.svg" alt="Ícone do css">
-            <span>CSS</span>
-          </div>
-
-          <div>
-            <img src="assets/icons/JavaScript.svg" alt="Ícone do javascript">
-            <span>Javascript</span>
-          </div>
-
-          <div>
-            <img src="assets/icons/React.svg" alt="Ícone do react">
-            <span>React</span>
-          </div>
-
-          <div>
-            <img src="assets/icons/Node.js.svg" alt="Ícone do node.js">
-            <span>Node.js</span>
-          </div>
-        </div>
-      </nav>
-
-      <div id="ArrowDown">
-        <img src="assets/icons/CaretDoubleDown.svg" alt="Ícone de duas setas para baixo">
       </div>
     </div>
-  </div>
-</body>
 
+    <main class="flex">
+      <section id="cards">
+        <header>
+          <h4>Meu trabalho</h4>
+          <h2>Veja os projetos em destaque</h2>
+        </header>
+
+        <div class="grid grid-cols-3 container">
+          <figure class="card" >
+            <img src="assets/images/Thumbnail_Project-01.png" alt="Imagem do projeto Travelgram">
+            <figcaption class="grid gap-8">
+              <h3>Travelgram<h3>
+              <p>Rede social onde as pessoas mostram os registros de suas viagens pelo mundo</p>
+            </figcaption>
+          </figure>
+
+          <figure class="grid card" >
+            <img src="assets/images/Thumbnail_Project-01.png" alt="Imagem do projeto Travelgram">
+            <figcaption class="grid gap-8">
+              <h3>Travelgram<h3>
+              <p>Rede social onde as pessoas mostram os registros de suas viagens pelo mundo</p>
+            </figcaption>
+          </figure>
+
+          <figure class="grid card" >
+            <img src="assets/images/Thumbnail_Project-01.png" alt="Imagem do projeto Travelgram">
+            <figcaption class="grid gap-8">
+              <h3>Travelgram<h3>
+              <p>Rede social onde as pessoas mostram os registros de suas viagens pelo mundo</p>
+            </figcaption>
+          </figure>
+
+          <figure class="grid card" >
+            <img src="assets/images/Thumbnail_Project-01.png" alt="Imagem do projeto Travelgram">
+            <figcaption class="grid gap-8">
+              <h3>Travelgram<h3>
+              <p>Rede social onde as pessoas mostram os registros de suas viagens pelo mundo</p>
+            </figcaption>
+          </figure>
+
+          <figure class="grid card" >
+            <img src="assets/images/Thumbnail_Project-01.png" alt="Imagem do projeto Travelgram">
+            <figcaption class="grid gap-8">
+              <h3>Travelgram<h3>
+              <p>Rede social onde as pessoas mostram os registros de suas viagens pelo mundo</p>
+            </figcaption>
+          </figure>
+
+          <figure class="grid card" >
+            <img src="assets/images/Thumbnail_Project-01.png" alt="Imagem do projeto Travelgram">
+            <figcaption class="grid gap-8">
+              <h3>Travelgram<h3>
+              <p>Rede social onde as pessoas mostram os registros de suas viagens pelo mundo</p>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
+
+    <section id="services" class="flex gap-24">
+        <header>
+          <h4>Meus serviços</h4>
+          <h2>Como posso ajudar o seu negócio</h2>
+        </header>
+
+        <div id="services-cards" class="flex gap-24">
+          <div id="services-card" class="grid">
+            <img src="assets/icons/Devices.svg" alt="Ícone de computador e celular">
+            <div>
+            <h3>Websites e Aplicativos</h3>
+            <p>Desenvolvimento de interfaces</p>
+            </div>
+          </div>
+
+          <div id="services-card" class="grid">
+            <img src="assets/icons/Devices.svg" alt="Ícone de computador e celular">
+            <div>
+            <h3>Websites e Aplicativos</h3>
+            <p>Desenvolvimento de interfaces</p>
+            </div>
+          </div>
+
+          <div id="services-card" class="grid">
+            <img src="assets/icons/Devices.svg" alt="Ícone de computador e celular">
+            <div>
+            <h3>Websites e Aplicativos</h3>
+            <p>Desenvolvimento de interfaces</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+    <footer class="flex">
+
+      <div id="contacts" class="flex">
+        <div id="contacts-text" class="flex">
+          <h4>Contato</h4>
+          <h2>Gostou do meu trabalho?</h2>
+          <p>Entre em contato ou acompanhe as minhas redes sociais!</p>
+        </div>
+
+        <div id="social" class="flex flex-col gap-16">
+          <div id="social-cards" class="flex">
+              <div class="social-icon">
+                <img class="img1" src="assets/icons/LinkedinLogo.svg" alt="">
+                <img class="img2" src="assets/icons/LinkedinLogoHover.svg" alt="">
+              </div>
+              <p>Linkedin</p>
+              <img src="assets/icons/ArrowUpRight.svg" alt="ícone de seta">
+          </div>
+
+          <div id="social-cards" class="flex">
+              <div class="social-icon">
+                <img class="img1" src="assets/icons/InstagramLogo.svg" alt="">
+                <img class="img2" src="assets/icons/InstagramLogoHover.svg" alt="">
+              </div>
+              <p>Instagram</p>
+              <img src="assets/icons/ArrowUpRight.svg" alt="ícone de seta">
+          </div>
+
+          <div id="social-cards" class="flex">
+              <div class="social-icon">
+                <img class="img1" src="assets/icons/GithubLogo.svg" alt="">
+                <img class="img2" src="assets/icons/GithubLogoHover.svg" alt="">
+              </div>
+              <p>GitHub</p>
+              <img src="assets/icons/ArrowUpRight.svg" alt="ícone de seta">
+          </div>
+
+          <div id="social-cards" class="flex">
+              <div class="social-icon">
+                <img class="img1" src="assets/icons/EnvelopeSimple.svg" alt="">
+                <img class="img2" src="assets/icons/EnvelopeSimpleHover.svg" alt="">
+              </div>
+              <p>E-mail</p>
+              <img src="assets/icons/ArrowUpRight.svg" alt="ícone de seta">
+          </div>
+        </div>
+
+      </div>
+    </footer>
+  </body>
 </html>

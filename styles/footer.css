@@ -1,0 +1,78 @@
+footer{
+  background-image: url(../assets/images/Background_Contacts.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 760px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  padding: 128px 120px;
+  min-width: 1366px;
+}
+
+#contacts {
+  flex-direction: column;
+  position: absolute;
+  gap: 48px;
+}
+
+#contacts-text {
+  flex-direction: column;
+  gap: 8px;
+  text-align: center;
+  width: 473px;
+
+  p {
+    font: var(--text-md);
+  }
+
+  h4 {
+    color: var(--purple-principal);
+  }
+}
+
+#social {
+  align-items: center;
+}
+
+#social-cards {
+  width: 400px;
+  gap: 12px;
+  padding: 20px;
+  background-color: var(--base-gray-400);
+  border: 1.5px solid var(--base-gray-400);
+  border-radius: 8px;
+
+  
+  .social-icon {
+    background-repeat: no-repeat;
+    width: 28px;
+    height: 28px;
+    
+    .img2 {
+      display: none;
+    }
+  }
+
+  p {
+    font: 500 16px/140% var(--font-text);
+    width: 288px;
+  }
+
+}
+
+#social-cards:hover {
+  border: 1.5px solid var(--blue-principal);
+  & div:nth-child(1) {
+    background-color: var(--base-gray-400);
+  }
+
+  .img1 {
+      display: none;
+    }
+
+    .img2 {
+      display: block;
+    }
+}
+

@@ -3,10 +3,10 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 750px;
+  min-width: 1366px
 }
 
-header {
+#intro header {
   flex-direction: column;
   text-align: center;
   justify-content: center;

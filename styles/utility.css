@@ -2,8 +2,20 @@
   display: flex;
 }
 
-.grip {
+.flex-col {
+  flex-direction: column  ;
+}
+
+.grid {
   display: grid;
+}
+
+.grid-flow-col {
+  grid-auto-flow: column;
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .gap-8 {
